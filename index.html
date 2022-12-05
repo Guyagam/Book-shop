@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="onInit()">
+  <div class="table-container">
+    <h1>Book Shop Edit System</h1>
+    <section class="book-filter">
+      <div class="filter">
+        <span>max price:</span>
+        <input type="range" min="0" max="100" value="60" class="filter-book-maxPrice-range"
+          onchange="this.title=this.value;onSetFilterBy({maxPrice: this.value})" />
+        <span>min rate:</span>
+        <input type="range" min="0" max="10" value="2" class="filter-book-minRange-range"
+          onchange="this.title=this.value;onSetFilterBy({minRate: this.value})" />
+      </div>
+      <div class="addBtn">
+        <button class="add" onclick="onAddBook()">Add new Book!</button>
+      </div>
+    </section>
+    <table>
+      <thead>
+        <tr>
+          <td>id</td>
+          <td>title</td>
+          <td>price</td>
+          <td colspan="3">action</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <div class="navButtons">
+        <button class="lastPage navBtn" onclick="onBackPage(this)">Last Page</button>
+        <button class="nextPage navBtn" onclick="onNextPage()">Next Page</button>
+      </div>
+    </table>
+
+
+    <div class="modal ">
+      <button class="modalbtn" onclick="onCloseModal()">X</button>
+      <h3></h3>
+      <h4>Name of the book: <span></span> </h4>
+      <h5> Price: <span></span></h5>
+      <img class="modalImg" />
+      <div class=" rating">
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/services/utils.js"></script>
+  <script src="js/services/storage.js"></script>
+  <script src="js/services/book_service.js"> </script>
+  <script src="js/controller.js"></script>
+</body>
+
+</html>

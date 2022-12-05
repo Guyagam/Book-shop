@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+}
+
+.table-container {
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornsilk;
+  flex-direction: column;
+}
+
+
+
+
+table,
+tr,
+td {
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  padding: 5px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.Readbtn {
+  background-color: blue;
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.Updatebtn {
+  background-color: rgb(218, 160, 53);
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.Deletebtn {
+  background-color: rgb(255, 0, 0);
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin-right: 10px;
+  background-color: crimson;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  display: none;
+}
+
+
+.modal>img {
+  height: 40%;
+  width: 40%;
+  margin: auto;
+}
+
+.modalbtn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.modalbtn:hover {
+  background-color: coral;
+}
+
+.rating {
+  border: 1px grey solid;
+  width: 30%;
+  margin: auto;
+}
+
+.book-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+
+
+.filter {
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.add {
+  border-radius: 30px;
+}
+
+.add:hover {
+  background-color: green;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: rgb(230, 97, 14);
+  position: absolute;
+  top: 0px;
+}
+
+.navButton {
+  display: flex;
+  flex-direction: row;
+}
+
+.addBtn {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navBtn {
+  border-radius: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  color: blue;
+}
+
+.navBtn:hover {
+  background-color: rgb(180, 57, 57);
+  color: black;
+}
